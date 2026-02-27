@@ -1,1 +1,66 @@
-<h1>WORKS</h1>
+<html lang="en">
+
+<head>
+    <title>Coding</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table td,
+        table th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+    <script>
+        function calculate() {
+    
+            var num1 = parseFloat(document.getElementById("input1").value);
+            var num2 = parseFloat(document.getElementById("input2").value);
+            var result = num1 * num2;
+            document.getElementById("result").innerHTML = "The result of multiplication is: " + result; 
+            return false;
+            }
+    </script>
+</head>
+
+<body>
+    <h2>Area Multiplication</h2>
+        <label for="input1">First Number:</label>
+        <input type="text" id="input1" name="input1"><br><br>
+        <label for="input2">Second Number:</label>
+        <input type="text" id="input2" name="input2"><br><br>
+        <input type="submit" value="Calculate" onclick="return calculate()">    
+    <div style="padding: 30px;">
+        <div id="result"></div>
+    <table>
+        <tr>
+            <td></td>
+            <td>100</td>
+            <td>20</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>200</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    </div>
+</body>
+
+</html>
